@@ -117,6 +117,7 @@
         },
         
         define: function(obj){
+            console.log('type', obj)
             var t = this,
                 d = t._dictionary,
                 id = obj.id,
@@ -336,7 +337,7 @@
                         cxform: cxform
                     });
                 if(!t._set[characterId]){
-                    console.log(t._dictionary)
+                    console.log(t._dictionary, objId)
                     var obj = t._dictionary[objId].object,
                         node = null,
                         type = obj.type,
