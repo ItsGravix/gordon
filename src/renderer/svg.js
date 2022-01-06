@@ -336,6 +336,7 @@
                         cxform: cxform
                     });
                 if(!t._set[characterId]){
+                    console.log(t._dictionary)
                     var obj = t._dictionary[objId].object,
                         node = null,
                         type = obj.type,
